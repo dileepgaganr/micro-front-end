@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 
-const channel = new BroadcastChannel('ccounterChannel');
+const channel = new BroadcastChannel('countChannel');
 
 channel.onmessage = (e) => {
     const store = useCounterStore();
